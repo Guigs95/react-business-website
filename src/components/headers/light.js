@@ -72,14 +72,10 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">About</NavLink>
-      <NavLink href="/#">Blog</NavLink>
-      <NavLink href="/#">Pricing</NavLink>
-      <NavLink href="/#">Contact Us</NavLink>
-      <NavLink href="/#" tw="lg:ml-12!">
-        Login
-      </NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Sign Up</PrimaryLink>
+        <NavLink href="/#">Qui sommes-nous ?</NavLink>
+        <NavLink href="/#">Notre ambition</NavLink>
+        <NavLink href="/#">Nos offres</NavLink>
+        <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Contacter nous !</PrimaryLink>
     </NavLinks>
   ];
 
@@ -89,7 +85,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const defaultLogoLink = (
     <LogoLink href="/">
       <img src={logo} alt="logo" />
-      Treact
+      dominici.dev
     </LogoLink>
   );
 
