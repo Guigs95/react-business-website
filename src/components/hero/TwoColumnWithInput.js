@@ -4,15 +4,16 @@ import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
 
-import Header from "../headers/light.js";
+import Header from "components/headers/light.js";
 
-import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
-import DesignIllustration from "../../images/design-illustration-2.svg";
-import CustomersLogoStripImage from "../../images/customers-logo-strip.png";
+import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-1.svg";
+import DesignIllustration from "images/design-illustration-2.svg";
+import serverIllustrationImageSrc from "images/server-illustration-2.svg";
+import CustomersLogoStripImage from "images/customers-logo-strip.png";
 
 const Container = tw.div`relative`;
-const TwoColumn = tw.div`flex flex-col lg:flex-row lg:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
-const LeftColumn = tw.div`relative lg:w-5/12 text-center max-w-lg mx-auto lg:max-w-none lg:text-left`;
+const TwoColumn = tw.div`flex flex-col lg:flex-row max-w-screen-xl mx-auto py-20 md:py-24`;
+const LeftColumn = tw.div`relative lg:w-5/12 mt-12 text-center max-w-lg mx-auto lg:max-w-none lg:text-left`;
 const RightColumn = tw.div`relative mt-12 lg:mt-0 flex-1 flex flex-col justify-center lg:self-end`;
 
 const Heading = tw.h1`font-bold text-3xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-900 leading-tight`;
@@ -53,24 +54,15 @@ export default ({ roundedHeaderButton }) => {
         <TwoColumn>
           <LeftColumn>
             <Heading>
-              Beautiful React Templates <span tw="text-primary-500">for you.</span>
+              <span tw="text-primary-500"> Avec vous</span> dans la transformation<span tw="text-primary-500"> digital</span> de votre <span tw="text-primary-500"> entreprise</span>
             </Heading>
             <Paragraph>
-              Our templates are easy to setup, understand and customize. Fully modular components with a variety of
-              pages and components.
+                <span tw="text-primary-500"> dominici.dev</span> accompagne ses clients dans la digitalisation et la mise en œuvre de systèmes de gestion modernes, stables et sécurisés.
             </Paragraph>
-            <Actions>
-              <input type="text" placeholder="Your E-mail Address" />
-              <button>Get Started</button>
-            </Actions>
-            <CustomersLogoStrip>
-              <p>Our TRUSTED Customers</p>
-              <img src={CustomersLogoStripImage} alt="Our Customers" />
-            </CustomersLogoStrip>
           </LeftColumn>
           <RightColumn>
             <IllustrationContainer>
-              <img tw="min-w-0 w-full max-w-lg xl:max-w-3xl" src={DesignIllustration} alt="Design Illustration" />
+                <img tw="min-w-0 w-full max-w-lg xl:max-w-3xl" src={serverIllustrationImageSrc} alt="Design Illustration" />
             </IllustrationContainer>
           </RightColumn>
         </TwoColumn>
