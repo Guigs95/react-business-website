@@ -57,7 +57,7 @@ export default ({ roundedHeaderButton }) => {
               <span tw="text-primary-500"> Avec vous</span> dans la transformation<span tw="text-primary-500"> digital</span> de votre <span tw="text-primary-500"> entreprise</span>
             </Heading>
             <Paragraph>
-                <span tw="text-primary-500"> dominici.dev</span> accompagne ses clients dans la digitalisation et la mise en œuvre de systèmes de gestion modernes, stables et sécurisés.
+                <span tw="text-primary-500"> dominici</span> accompagne ses clients dans la digitalisation et la mise en œuvre de systèmes de gestion modernes, stables et sécurisés.
             </Paragraph>
           </LeftColumn>
           <RightColumn>
